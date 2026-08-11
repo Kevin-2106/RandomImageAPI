@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local runtime configuration and data
+config.toml
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Codex workspace mount points
+.agents/
+.codex/

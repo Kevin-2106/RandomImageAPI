@@ -1,0 +1,25 @@
+[project]
+name = "randomimageapi"
+version = "0.1.0"
+description = "Random Image API built with FastAPI and SQLite"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "sqlalchemy>=2.0.0",
+    "aiofiles>=24.1.0",
+    "python-multipart>=0.0.12",
+]
+
+[project.scripts]
+start = "main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# flat-layout：将根目录下的所有 .py 打包
+sources = ["."]
+include = ["*.py"]
